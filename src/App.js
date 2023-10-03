@@ -38,7 +38,7 @@ class App extends Component {
   }
 
   onFetchGraphQLDemos = () => {
-    axios.get('https://raw.githubusercontent.com/graphql-kit/graphql-apis/master/demos.json')
+    axios.get('/graphqlApis')
       .then(response => {
         this.setState({ demos: response.data });
       })
